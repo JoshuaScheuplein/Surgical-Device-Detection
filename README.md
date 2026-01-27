@@ -16,72 +16,71 @@ Reference to conda yaml file and detectron2 installation instructions
 
 ## Test Table
 
-<table border="1">
-
-  <!-- Define column widths and alignment -->
+<table border="1" style="border-collapse: collapse; width:100%;">
+  <!-- Define column widths -->
   <colgroup>
-    <col style="width:20%; text-align:left;">
-    <col style="width:80%; text-align:center;">
-    <col style="width:20%; text-align:center;">
-    <col style="width:20%; text-align:center;">
-    <col style="width:20%; text-align:center;">
+    <col style="width:20%;">
+    <col style="width:20%;">
+    <col style="width:20%;">
+    <col style="width:20%;">
+    <col style="width:20%;">
   </colgroup>
 
   <!-- Header rows -->
   <tr>
-    <th rowspan="2">Metric</th>
-    <th colspan="2">Faster R-CNN</th>
-    <th colspan="2">Mask R-CNN</th>
+    <th rowspan="2" style="text-align:center;">Metric</th>
+    <th colspan="2" style="text-align:center;">Faster R-CNN</th>
+    <th colspan="2" style="text-align:center;">Mask R-CNN</th>
   </tr>
   <tr>
-    <th>Bounding Boxes</th>
-    <th>Keypoints</th>
-    <th>Bounding Boxes</th>
-    <th>Keypoints</th>
+    <th style="text-align:center;">Bounding Boxes</th>
+    <th style="text-align:center;">Keypoints</th>
+    <th style="text-align:center;">Bounding Boxes</th>
+    <th style="text-align:center;">Keypoints</th>
   </tr>
 
   <!-- Data rows -->
   <tr>
-    <th> mAP@0.50:0.95      </th>
-    <td> 60.9 &plusmn; 3.0  </td>
-    <td> 53.8 &plusmn; 4.1  </td>
-    <td> 64.7 &plusmn; 2.6  </td>
-    <td> 58.0 &plusmn; 4.4  </td>
+    <td style="text-align:left;">mAP@0.50:0.95</td>
+    <td style="text-align:center;">60.9 &plusmn; 3.0</td>
+    <td style="text-align:center;">53.8 &plusmn; 4.1</td>
+    <td style="text-align:center;">64.7 &plusmn; 2.6</td>
+    <td style="text-align:center;">58.0 &plusmn; 4.4</td>
   </tr>
   <tr>
-    <th> mAP@0.75           </th>
-    <td> 72.6 &plusmn; 3.2  </td>
-    <td> 56.7 &plusmn; 4.1  </td>
-    <td> 78.4 &plusmn; 3.3  </td>
-    <td> 62.0 &plusmn; 5.4  </td>
+    <td style="text-align:left;">mAP@0.75</td>
+    <td style="text-align:center;">72.6 &plusmn; 3.2</td>
+    <td style="text-align:center;">56.7 &plusmn; 4.1</td>
+    <td style="text-align:center;">78.4 &plusmn; 3.3</td>
+    <td style="text-align:center;">62.0 &plusmn; 5.4</td>
   </tr>
   <tr>
-    <th> mAP@0.50           </th>
-    <td> 86.4 &plusmn; 2.7  </td>
-    <td> 77.5 &plusmn; 4.9  </td>
-    <td> 87.0 &plusmn; 2.3  </td>
-    <td> 79.5 &plusmn; 4.2  </td>
+    <td style="text-align:left;">mAP@0.50</td>
+    <td style="text-align:center;">86.4 &plusmn; 2.7</td>
+    <td style="text-align:center;">77.5 &plusmn; 4.9</td>
+    <td style="text-align:center;">87.0 &plusmn; 2.3</td>
+    <td style="text-align:center;">79.5 &plusmn; 4.2</td>
   </tr>
   <tr>
-    <th> mAR@0.50:0.95      </th>
-    <td> 65.4 &plusmn; 3.0  </td>
-    <td> 61.9 &plusmn; 4.4  </td>
-    <td> 70.4 &plusmn; 2.2  </td>
-    <td> 67.9 &plusmn; 3.7  </td>
+    <td style="text-align:left;">mAR@0.50:0.95</td>
+    <td style="text-align:center;">65.4 &plusmn; 3.0</td>
+    <td style="text-align:center;">61.9 &plusmn; 4.4</td>
+    <td style="text-align:center;">70.4 &plusmn; 2.2</td>
+    <td style="text-align:center;">67.9 &plusmn; 3.7</td>
   </tr>
   <tr>
-    <th> mAR@0.75           </th>
-    <td> 76.5 &plusmn; 3.2  </td>
-    <td> 65.6 &plusmn; 4.4  </td>
-    <td> 82.6 &plusmn; 2.5  </td>
-    <td> 71.8 &plusmn; 4.1  </td>
+    <td style="text-align:left;">mAR@0.75</td>
+    <td style="text-align:center;">76.5 &plusmn; 3.2</td>
+    <td style="text-align:center;">65.6 &plusmn; 4.4</td>
+    <td style="text-align:center;">82.6 &plusmn; 2.5</td>
+    <td style="text-align:center;">71.8 &plusmn; 4.1</td>
   </tr>
   <tr>
-    <th> mAR@0.50           </th>
-    <td> 88.0 &plusmn; 2.6  </td>
-    <td> 80.6 &plusmn; 4.5  </td>
-    <td> 88.8 &plusmn; 2.3  </td>
-    <td> 83.6 &plusmn; 3.3  </td>
+    <td style="text-align:left;">mAR@0.50</td>
+    <td style="text-align:center;">88.0 &plusmn; 2.6</td>
+    <td style="text-align:center;">80.6 &plusmn; 4.5</td>
+    <td style="text-align:center;">88.8 &plusmn; 2.3</td>
+    <td style="text-align:center;">83.6 &plusmn; 3.3</td>
   </tr>
 </table>
 
