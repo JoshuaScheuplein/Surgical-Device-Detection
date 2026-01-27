@@ -21,7 +21,7 @@ Reference to conda yaml file and detectron2 installation instructions
   <!-- Define column widths and alignment -->
   <colgroup>
     <col style="width:20%; text-align:left;">
-    <col style="width:20%; text-align:center;">
+    <col style="width:80%; text-align:center;">
     <col style="width:20%; text-align:center;">
     <col style="width:20%; text-align:center;">
     <col style="width:20%; text-align:center;">
@@ -34,10 +34,10 @@ Reference to conda yaml file and detectron2 installation instructions
     <th colspan="2">Mask R-CNN</th>
   </tr>
   <tr>
-    <th> Bounding Boxes     </th>
-    <th> Keypoints          </th>
-    <th> Bounding Boxes     </th>
-    <th> Keypoints          </th>
+    <th>Bounding Boxes</th>
+    <th>Keypoints</th>
+    <th>Bounding Boxes</th>
+    <th>Keypoints</th>
   </tr>
 
   <!-- Data rows -->
