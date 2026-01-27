@@ -29,7 +29,7 @@ Reference to conda yaml file and detectron2 installation instructions
 
   <!-- Header rows -->
   <tr>
-    <th rowspan="2">Metric/th>
+    <th rowspan="2">Metric</th>
     <th colspan="2">Faster R-CNN</th>
     <th colspan="2">Mask R-CNN</th>
   </tr>
