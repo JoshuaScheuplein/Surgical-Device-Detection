@@ -23,15 +23,14 @@ Reference to conda yaml file and detectron2 installation instructions
     <th colspan="2"> Mask R-CNN     </th>
   </tr>
   <tr>
-    <th> </th>
     <th> Bounding Boxes</th>
     <th> Keypoints</th>
     <th> Bounding Boxes</th>
     <th> Keypoints</th>
   </tr>
   <tr>
-    <th> mAP </th>
-    <th> 0.5</th>
+    <th> mAP@0.50:0.95 </th>
+    <th> 0.5 &plusmn; 0.1</th>
     <th> 0.1</th>
     <th> 0.3</th>
     <th> 0.2</th>
