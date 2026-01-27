@@ -18,9 +18,9 @@ Reference to conda yaml file and detectron2 installation instructions
 
 <table>
   <tr>
-    <th> </th>
-    <th colspan="2">Faster R-CNN</th>
-    <th colspan="2">Mask R-CNN</th>
+    <th rowspan="2"> Metric         </th>
+    <th colspan="2"> Faster R-CNN   </th>
+    <th colspan="2"> Mask R-CNN     </th>
   </tr>
   <tr>
     <th> </th>
