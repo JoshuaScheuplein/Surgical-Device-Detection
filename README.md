@@ -4,7 +4,6 @@ We provide only simulated example cases as we are not allowed to share real clin
 
 Reference to conda yaml file and detectron2 installation instructions
 
-## Method
 ![Pipeline](figures/Pipeline_Overview.png)
 
 ## Checkpoints
@@ -14,7 +13,7 @@ Reference to conda yaml file and detectron2 installation instructions
 | Faster-R-CNN       | 58.8 M       | [Checkpoint](https://huggingface.co/joshua-scheuplein/Implant-Detector-Faster-R-CNN/resolve/main/Implant_Detector_Faster_R_CNN.pth) |
 | Mask-R-CNN         | 61.4 M       | [Checkpoint](https://huggingface.co/joshua-scheuplein/Implant-Detector-Mask-R-CNN/resolve/main/Implant_Detector_Mask_R_CNN.pth) |
 
-## Test Table
+## Model Inference
 
 <table border="1" style="border-collapse: collapse; width:100%;">
   <!-- Define column widths -->
@@ -75,6 +74,12 @@ Reference to conda yaml file and detectron2 installation instructions
     <td style="text-align:center;">82.6 &plusmn; 2.5</td>
     <td style="text-align:center;">71.8 &plusmn; 4.1</td>
   </tr>
+
+  <!-- Bold separator row -->
+  <tr>
+    <td colspan="3" style="border-bottom:3px solid black;"></td>
+  </tr>
+
   <tr>
     <td style="text-align:left;"><b>mAR@0.50</b></td>
     <td style="text-align:center;">88.0 &plusmn; 2.6</td>
@@ -84,7 +89,8 @@ Reference to conda yaml file and detectron2 installation instructions
   </tr>
 </table>
 
-## Inference
+![Results](figures/Mask_R_CNN_Predictions.png)
+
 To perform inference run the following script [model_inference.py](model_inference.py) and is 
 
 ```bash
@@ -92,6 +98,8 @@ torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
 ```
 
 ## Triangulation
+
+![Triangulation](figures/Triangulation_Overview.png)
 
 <table border="1" style="border-collapse: collapse; width:100%;">
   <!-- Define column widths -->
@@ -157,6 +165,12 @@ torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
     <td style="text-align:center;">70.8 &plusmn; 8.9</td>
     <td style="text-align:center;">77.1 &plusmn; 4.0</td>
   </tr>
+
+  <!-- Bold separator row -->
+  <tr>
+    <td colspan="5" style="border-bottom:3px solid black;"></td>
+  </tr>
+
   <tr>
     <td style="text-align:left;"><b>Micro Average</b></td>
     <td style="text-align:center;">86.6 &plusmn; 2.7</td>
@@ -166,6 +180,12 @@ torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
     <td style="text-align:center;">88.2 &plusmn; 6.2</td>
     <td style="text-align:center;">91.5 &plusmn; 3.9</td>
   </tr>
+
+  <!-- Bold separator row -->
+  <tr>
+    <td colspan="5" style="border-bottom:3px solid black;"></td>
+  </tr>
+
   <tr>
     <td style="text-align:left;"><b>Macro Average</b></td>
     <td style="text-align:center;">87.7 &plusmn; 2.6</td>
@@ -176,6 +196,7 @@ torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
     <td style="text-align:center;">91.4 &plusmn; 2.8</td>
   </tr>
 </table>
+
 
 ## License
 This repository is released under the Apache License 2.0. See [LICENSE](LICENSE) for additional details.
