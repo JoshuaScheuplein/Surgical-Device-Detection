@@ -2,11 +2,15 @@
 
 We provide only simulated example cases as we are not allowed to share real clinical patient data / images ...
 
-Reference to conda yaml file and detectron2 installation instructions
-
 ![Pipeline](figures/Pipeline_Overview.png)
 
-## Checkpoints
+## Requirements
+
+Setup a conda environment and install detectron2 (see external link)
+
+[conda_environment.yaml](conda_environment.yaml)
+
+Download the following PyTorch model checkpoints to your local download directory:
 
 | Model Architecture | # Parameters | Download                           |
 |:------------------:|:------------:|:----------------------------------:|
@@ -96,6 +100,8 @@ To perform inference run the following script [model_inference.py](model_inferen
 ```bash
 torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
 ```
+
+We provide only simulated example cases as we are not allowed to share real clinical patient data / images ...
 
 ## Triangulation
 
@@ -197,6 +203,11 @@ torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
   </tr>
 </table>
 
+To perform triangulation run the following script [model_inference.py](model_inference.py) and is 
+
+```bash
+torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
+```
 
 ## License
 This repository is released under the Apache License 2.0. See [LICENSE](LICENSE) for additional details.
