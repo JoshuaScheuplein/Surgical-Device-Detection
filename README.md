@@ -60,6 +60,12 @@ Reference to conda yaml file and detectron2 installation instructions
     <td style="text-align:center;">87.0 &plusmn; 2.3</td>
     <td style="text-align:center;">79.5 &plusmn; 4.2</td>
   </tr>
+
+  <!-- Bold separator row -->
+  <tr>
+    <td colspan="5" style="border-bottom:3px solid black;"></td>
+  </tr>
+
   <tr>
     <td style="text-align:left;"><b>mAR@0.50:0.95</b></td>
     <td style="text-align:center;">65.4 &plusmn; 3.0</td>
@@ -74,12 +80,6 @@ Reference to conda yaml file and detectron2 installation instructions
     <td style="text-align:center;">82.6 &plusmn; 2.5</td>
     <td style="text-align:center;">71.8 &plusmn; 4.1</td>
   </tr>
-
-  <!-- Bold separator row -->
-  <tr>
-    <td colspan="3" style="border-bottom:3px solid black;"></td>
-  </tr>
-
   <tr>
     <td style="text-align:left;"><b>mAR@0.50</b></td>
     <td style="text-align:center;">88.0 &plusmn; 2.6</td>
@@ -99,7 +99,7 @@ torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
 
 ## Triangulation
 
-![Triangulation](figures/Triangulation_Overview.png)
+![Triangulation](figures/Triangulation_Geometry.png)
 
 <table border="1" style="border-collapse: collapse; width:100%;">
   <!-- Define column widths -->
@@ -168,7 +168,7 @@ torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
 
   <!-- Bold separator row -->
   <tr>
-    <td colspan="5" style="border-bottom:3px solid black;"></td>
+    <td colspan="7" style="border-bottom:3px solid black;"></td>
   </tr>
 
   <tr>
@@ -183,7 +183,7 @@ torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
 
   <!-- Bold separator row -->
   <tr>
-    <td colspan="5" style="border-bottom:3px solid black;"></td>
+    <td colspan="7" style="border-bottom:3px solid black;"></td>
   </tr>
 
   <tr>
