@@ -10,7 +10,7 @@ Reference to conda yaml file and detectron2 installation instructions
 ## Checkpoints
 
 | Model Architecture | # Parameters | Download                           |
-|--------------------|-------------:|:----------------------------------:|
+|:------------------:|:------------:|:----------------------------------:|
 | Faster-R-CNN       | 58.8 M       | [Checkpoint](https://huggingface.co/joshua-scheuplein/Implant-Detector-Faster-R-CNN/resolve/main/Implant_Detector_Faster_R_CNN.pth) |
 | Mask-R-CNN         | 61.4 M       | [Checkpoint](https://huggingface.co/joshua-scheuplein/Implant-Detector-Mask-R-CNN/resolve/main/Implant_Detector_Mask_R_CNN.pth) |
 
@@ -18,31 +18,23 @@ Reference to conda yaml file and detectron2 installation instructions
 
 <table>
   <tr>
-    <th>Model Architecture</th>
-    <th>Faster R-CNN</th>
-    <th>Mask R-CNN</th>
+    <th> </th>
+    <th colspan="2">Faster R-CNN</th>
+    <th colspan="2">Mask R-CNN</th>
   </tr>
   <tr>
-    <th>Model Architecture</th>
-    <th>Faster R-CNN</th>
-    <th>Mask R-CNN</th>
+    <th> </th>
+    <th> Bounding Boxes</th>
+    <th> Keypoints</th>
+    <th> Bounding Boxes</th>
+    <th> Keypoints</th>
   </tr>
   <tr>
-    <td rowspan="2">R-CNN Family</td>
-    <td>11.2 M</td>
-    <td>0.72</td>
-    <td>0.65</td>
-    <td>
-      <a href="https://huggingface.co/...">Faster R-CNN</a>
-    </td>
-  </tr>
-  <tr>
-    <td>23.5 M</td>
-    <td>0.75</td>
-    <td>0.68</td>
-    <td>
-      <a href="https://huggingface.co/...">Mask R-CNN</a>
-    </td>
+    <th> mAP </th>
+    <th> 0.5</th>
+    <th> 0.1</th>
+    <th> 0.3</th>
+    <th> 0.2</th>
   </tr>
 </table>
 
