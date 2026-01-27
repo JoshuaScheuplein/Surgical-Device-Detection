@@ -23,17 +23,52 @@ Reference to conda yaml file and detectron2 installation instructions
     <th colspan="2"> Mask R-CNN     </th>
   </tr>
   <tr>
-    <th> Bounding Boxes</th>
-    <th> Keypoints</th>
-    <th> Bounding Boxes</th>
-    <th> Keypoints</th>
+    <th> Bounding Boxes     </th>
+    <th> Keypoints          </th>
+    <th> Bounding Boxes     </th>
+    <th> Keypoints          </th>
   </tr>
   <tr>
-    <th> mAP@0.50:0.95 </th>
-    <th> 0.5 &plusmn; 0.1</th>
-    <th> 0.1</th>
-    <th> 0.3</th>
-    <th> 0.2</th>
+    <th> mAP@0.50:0.95      </th>
+    <td> 60.9 &plusmn; 3.0  </td>
+    <td> 53.8 &plusmn; 4.1  </td>
+    <td> 64.7 &plusmn; 2.6  </td>
+    <td> 58.0 &plusmn; 4.4  </td>
+  </tr>
+  <tr>
+    <th> mAP@0.75           </th>
+    <td> 72.6 &plusmn; 3.2  </td>
+    <td> 56.7 &plusmn; 4.1  </td>
+    <td> 78.4 &plusmn; 3.3  </td>
+    <td> 62.0 &plusmn; 5.4  </td>
+  </tr>
+  <tr>
+    <th> mAP@0.50           </th>
+    <td> 86.4 &plusmn; 2.7  </td>
+    <td> 77.5 &plusmn; 4.9  </td>
+    <td> 87.0 &plusmn; 2.3  </td>
+    <td> 79.5 &plusmn; 4.2  </td>
+  </tr>
+  <tr>
+    <th> mAR@0.50:0.95      </th>
+    <td> 65.4 &plusmn; 3.0  </td>
+    <td> 61.9 &plusmn; 4.4  </td>
+    <td> 70.4 &plusmn; 2.2  </td>
+    <td> 67.9 &plusmn; 3.7  </td>
+  </tr>
+  <tr>
+    <th> mAR@0.75           </th>
+    <td> 76.5 &plusmn; 3.2  </td>
+    <td> 65.6 &plusmn; 4.4  </td>
+    <td> 82.6 &plusmn; 2.5  </td>
+    <td> 71.8 &plusmn; 4.1  </td>
+  </tr>
+  <tr>
+    <th> mAR@0.50           </th>
+    <td> 88.0 &plusmn; 2.6  </td>
+    <td> 80.6 &plusmn; 4.5  </td>
+    <td> 88.8 &plusmn; 2.3  </td>
+    <td> 83.6 &plusmn; 3.3  </td>
   </tr>
 </table>
 
