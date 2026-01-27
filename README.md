@@ -33,15 +33,15 @@ Reference to conda yaml file and detectron2 installation instructions
     <th colspan="2" style="text-align:center;">Mask R-CNN</th>
   </tr>
   <tr>
-    <th style="text-align:center;">Bounding Boxes</th>
-    <th style="text-align:center;">Keypoints</th>
-    <th style="text-align:center;">Bounding Boxes</th>
-    <th style="text-align:center;">Keypoints</th>
+    <th style="text-align:center;">BBs</th>
+    <th style="text-align:center;">KPs</th>
+    <th style="text-align:center;">BBs</th>
+    <th style="text-align:center;">KPs</th>
   </tr>
 
   <!-- Data rows -->
   <tr>
-    <td style="text-align:left;">mAP@0.50:0.95</td>
+    <td style="text-align:left;"><b>mAP@0.50:0.95</b></td>
     <td style="text-align:center;">60.9 &plusmn; 3.0</td>
     <td style="text-align:center;">53.8 &plusmn; 4.1</td>
     <td style="text-align:center;">64.7 &plusmn; 2.6</td>
