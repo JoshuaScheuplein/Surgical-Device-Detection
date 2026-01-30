@@ -2,7 +2,7 @@
 
 We provide only simulated example cases as we are not allowed to share real clinical patient data / images ...
 
-![Pipeline](figures/Pipeline_Overview.png)
+<img src="figures/Pipeline_Overview.png" alt="Pipeline-Overview" width="100%">
 
 ## Requirements
 
@@ -93,11 +93,11 @@ Download the following PyTorch model checkpoints to your local download director
   </tr>
 </table>
 
-![Results](figures/Mask_R_CNN_Predictions.png)
+<img src="figures/Mask_R_CNN_Predictions.png" alt="Model-Predictions" width="100%">
 
 To perform inference run the following script [model_inference.py](model_inference.py) and is 
 
-```python
+```bash
 python implant_detection.py --download_dir="C:/Users/Username/Downloads/" --model_type="Mask-R-CNN"  
 ```
 
@@ -105,7 +105,7 @@ We provide only simulated example cases as we are not allowed to share real clin
 
 ## Triangulation
 
-<img src="figures/Triangulation_Geometry.png" alt="Triangulation-Geometry" width="80%">
+<img src="figures/Triangulation_Geometry.png" alt="Triangulation-Geometry" width="100%">
 
 <table border="1" style="border-collapse: collapse; width:100%;">
   <!-- Define column widths -->
@@ -205,13 +205,13 @@ We provide only simulated example cases as we are not allowed to share real clin
 
 To perform triangulation run the following script [model_inference.py](model_inference.py) and is 
 
-```python
+```bash
 python implant_triangulation.py --model_type="Mask-R-CNN" --detection_type="predictions" --enable_refinement="False"
 ```
 
 Example Output:
 
-![Triangulation-Preview](assets/triangulation_results/Mask-R-CNN/S260_Spine03/Triangulation_S260_Spine03_v1_120_v2_300_pred.png)
+<img src="assets/triangulation_results/Mask-R-CNN/S260_Spine03/Triangulation_S260_Spine03_v1_120_v2_300_pred.png" alt="Triangulation-Preview" width="60%">
 
 ## License
 This repository is released under the Apache License 2.0. See [LICENSE](LICENSE) for additional details.
