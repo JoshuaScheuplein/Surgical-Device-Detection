@@ -217,7 +217,7 @@ Quantitative results obtained on clinical test scans are summarized in the table
   </tr>
 </table>
 
-To **visualize the output of the triangulation methods**, we generate preview images that summarize the triangulated implant keypoints. The first row shows the initial 2D implant detections for both projection views. The second row displays the corresponding 2D implant locations obtained by **forward-projecting the triangulated 3D implant positions** back onto the detector plane. A close alignment between the forward-projected 3D keypoints and the corresponding image features in the projection images indicates accurate and geometrically consistent triangulation.
+To **visualize the output of the triangulation methods**, we generate [preview images](assets/triangulation_results/) that summarize the triangulated implant keypoints. The first row shows the initial 2D implant detections for both projection views. The second row displays the corresponding 2D implant locations obtained by **forward-projecting the triangulated 3D implant positions** back onto the detector plane. A close alignment between the forward-projected 3D keypoints and the corresponding image features in the projection images indicates accurate and geometrically consistent triangulation.
 
 <p align="center">
   <img src="assets/triangulation_results/Mask-R-CNN/S260_Spine03/Triangulation_S260_Spine03_v1_120_v2_300_pred.png" alt="Triangulation-Preview" width="70%">
