@@ -97,7 +97,7 @@ Download the following PyTorch model checkpoints to your local download director
 
 To perform inference run the following script [model_inference.py](model_inference.py) and is 
 
-```bash
+```python
 python implant_detection.py --download_dir="C:/Users/Username/Downloads/" --model_type="Mask-R-CNN"  
 ```
 
@@ -105,7 +105,7 @@ We provide only simulated example cases as we are not allowed to share real clin
 
 ## Triangulation
 
-![Triangulation](figures/Triangulation_Geometry.png)
+<img src="figures/Triangulation_Geometry.png" alt="Triangulation-Geometry" width="80%">
 
 <table border="1" style="border-collapse: collapse; width:100%;">
   <!-- Define column widths -->
@@ -205,7 +205,7 @@ We provide only simulated example cases as we are not allowed to share real clin
 
 To perform triangulation run the following script [model_inference.py](model_inference.py) and is 
 
-```bash
+```python
 python implant_triangulation.py --model_type="Mask-R-CNN" --detection_type="predictions" --enable_refinement="False"
 ```
 
