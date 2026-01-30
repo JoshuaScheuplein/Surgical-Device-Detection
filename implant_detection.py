@@ -141,7 +141,7 @@ if __name__ == '__main__':
 
             # save predictions as JSON file            
             json_predictions = instances_to_coco_json(instances, view_name)
-            pred_json_file = tmp_out_folder_json / f"{view_name}_Predictions.json"
+            pred_json_file = tmp_out_folder_json / f"{view_name}_pred.json"
             with open(pred_json_file, "w") as f:
                 json.dump(json_predictions, f, indent=4)       
 
@@ -150,7 +150,7 @@ if __name__ == '__main__':
             ax.imshow(out.get_image(), cmap="gray")
             ax.axis('off')
             fig.tight_layout()
-            fig.savefig(tmp_out_folder_png / f"{view_name}_Predictions.png",
+            fig.savefig(tmp_out_folder_png / f"{view_name}_pred.png",
                         bbox_inches='tight', pad_inches=0)
             # plt.show() # interactive mode only for debugging / testing
             plt.close()
