@@ -1,16 +1,16 @@
 # Implant-Detection
 
-This repository implements methods for geometry-consistent 3D implant pose estimation from 2D object detections in intraoperative X-ray imaging. It includes pretrained checkpoints for Faster R-CNN and Mask R-CNN models used for 2D implant detection in projection images from intraoperative CBCT acquisitions. In addition, the repository provides scripts for model inference as well as for estimating the 3D position and orientation of implants by triangulating the detected 2D keypoints from two distinct views. All reported quantitative results are based exclusively on evaluations using real clinical data. Due to data privacy restrictions, these clinical images cannot be shared publicly. Therefore, this repository includes simulated example cases (provided as TIFF files) that demonstrate the full inference and triangulation pipeline.
+This repository implements methods for **geometry-consistent 3D implant pose estimation from 2D object detections in intraoperative X-ray imaging**. It includes pretrained checkpoints for **Faster R-CNN** and **Mask R-CNN** models used for 2D implant detection in projection images from intraoperative CBCT acquisitions. In addition, the repository provides scripts for **model inference** as well as for estimating the 3D position and orientation of implants by **triangulating the detected 2D keypoints** from two distinct views. All reported quantitative results are based exclusively on **evaluations using real clinical data**. Due to data privacy restrictions, these clinical images cannot be shared publicly. Therefore, this repository includes **simulated example cases** (provided as TIFF files) that demonstrate the full inference and triangulation pipeline.
 
 <img src="figures/Pipeline_Overview.png" alt="Pipeline-Overview" width="100%">
 
 ## Requirements
 
-To run model inference and perform triangulation, a Python environment must be set up first. We recommend creating a new conda environment using Python 3.9. Within this environment, the Detectron2 package must be installed by following the official installation guide: [Install Detectron2](https://detectron2.readthedocs.io/en/v0.6/tutorials/install.html)
+To run model inference and perform triangulation, a Python environment must be set up first. We recommend creating a new **conda environment** using **Python 3.9**. Within this environment, the **Detectron2 package** must be installed by following the official installation guide: [Install Detectron2](https://detectron2.readthedocs.io/en/v0.6/tutorials/install.html)
 
 All remaining package dependencies are specified in the provided conda environment file: [conda_environment.yaml](conda_environment.yaml)
 
-To use the pretrained implant detection models for inference, please download the provided PyTorch model checkpoints to a local directory on your system (e.g., C:/Users/Username/Downloads):
+To use the pretrained implant detection models for inference, please download the provided **PyTorch model checkpoints** to a local directory on your system (e.g., C:/Users/Username/Downloads):
 
 | Model Architecture | # Parameters | Download                           |
 |:------------------:|:------------:|:----------------------------------:|
@@ -18,6 +18,14 @@ To use the pretrained implant detection models for inference, please download th
 | Mask R-CNN         | 61.4 M       | [Checkpoint](https://huggingface.co/joshua-scheuplein/Implant-Detector-Mask-R-CNN/resolve/main/Implant_Detector_Mask_R_CNN.pth) |
 
 ## Model Inference
+
+To run **model inference**, execute the script [implant_detection.py](implant_detection.py) using the following command:
+
+```bash
+python implant_detection.py --download_dir="C:/Users/Username/Downloads/" --model_type="Mask-R-CNN"  
+```
+
+We report both quantitative and qualitative results obtained on real clinical test scans:
 
 <table border="1" style="border-collapse: collapse; width:100%;">
   <!-- Define column widths -->
@@ -95,15 +103,15 @@ To use the pretrained implant detection models for inference, please download th
 
 <img src="figures/Mask_R_CNN_Predictions.png" alt="Model-Predictions" width="100%">
 
-To perform inference run the following script [model_inference.py](model_inference.py) and is 
+## Triangulation
+
+To perform **triangulation**, run the script [implant_triangulation.py](implant_triangulation.py) using the following command:
 
 ```bash
-python implant_detection.py --download_dir="C:/Users/Username/Downloads/" --model_type="Mask-R-CNN"  
+python implant_triangulation.py --model_type="Mask-R-CNN" --detection_type="predictions" --enable_refinement="False"
 ```
 
-We provide only simulated example cases as we are not allowed to share real clinical patient data / images ...
-
-## Triangulation
+Quantitative results obtained on clinical test scans are summarized in the table below:
 
 <img src="figures/Triangulation_Geometry.png" alt="Triangulation-Geometry" width="100%">
 
@@ -203,13 +211,7 @@ We provide only simulated example cases as we are not allowed to share real clin
   </tr>
 </table>
 
-To perform triangulation run the following script [model_inference.py](model_inference.py) and is 
-
-```bash
-python implant_triangulation.py --model_type="Mask-R-CNN" --detection_type="predictions" --enable_refinement="False"
-```
-
-Example Output:
+To **visualize the output of the triangulation methods**, we generate preview images that summarize the triangulated implant keypoints. The first row shows the initial 2D implant detections for both projection views. The second row displays the corresponding 2D implant locations obtained by **forward-projecting the triangulated 3D implant positions** back onto the detector plane. A close alignment between the forward-projected 3D keypoints and the corresponding image features in the projection images indicates accurate and geometrically consistent triangulation.
 
 <img src="assets/triangulation_results/Mask-R-CNN/S260_Spine03/Triangulation_S260_Spine03_v1_120_v2_300_pred.png" alt="Triangulation-Preview" width="60%">
 
