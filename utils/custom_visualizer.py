@@ -18,8 +18,8 @@ import torch
 import pycocotools.mask as mask_util
 
 from detectron2.data import MetadataCatalog
-from detectron2.structures import BitMasks, Boxes, BoxMode, Keypoints, PolygonMasks, RotatedBoxes
 from detectron2.utils.file_io import PathManager
+from detectron2.structures import BitMasks, Boxes, BoxMode, Keypoints, PolygonMasks, RotatedBoxes
 
 ############################################################################
 # from .colormap import random_color                # Original code
