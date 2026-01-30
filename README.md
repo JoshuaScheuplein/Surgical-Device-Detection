@@ -98,7 +98,7 @@ Download the following PyTorch model checkpoints to your local download director
 To perform inference run the following script [model_inference.py](model_inference.py) and is 
 
 ```bash
-torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
+python implant_detection.py --download_dir="C:/Users/Username/Downloads/" --model_type="Mask-R-CNN"  
 ```
 
 We provide only simulated example cases as we are not allowed to share real clinical patient data / images ...
@@ -206,8 +206,12 @@ We provide only simulated example cases as we are not allowed to share real clin
 To perform triangulation run the following script [model_inference.py](model_inference.py) and is 
 
 ```bash
-torchrun --nproc_per_node=4 main_dax_training.py --arch='resnet50' --flag=True'
+python implant_triangulation.py --model_type="Mask-R-CNN" --detection_type="predictions" --enable_refinement="False"
 ```
+
+Example Output:
+
+![Triangulation-Preview](assets/triangulation_results/Mask-R-CNN/S260_Spine03/Triangulation_S260_Spine03_v1_060_v2_240_pred.png)
 
 ## License
 This repository is released under the Apache License 2.0. See [LICENSE](LICENSE) for additional details.
