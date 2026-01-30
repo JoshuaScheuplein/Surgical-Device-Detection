@@ -47,22 +47,22 @@ Download the following PyTorch model checkpoints to your local download director
     <td style="text-align:left;"><b>mAP@0.50:0.95</b></td>
     <td style="text-align:center;">60.9 &plusmn; 3.0</td>
     <td style="text-align:center;">53.8 &plusmn; 4.1</td>
-    <td style="text-align:center;">64.7 &plusmn; 2.6</td>
-    <td style="text-align:center;">58.0 &plusmn; 4.4</td>
+    <td style="text-align:center;"><b>64.7</b> &plusmn; 2.6</td>
+    <td style="text-align:center;"><b>58.0</b> &plusmn; 4.4</td>
   </tr>
   <tr>
     <td style="text-align:left;"><b>mAP@0.75</b></td>
     <td style="text-align:center;">72.6 &plusmn; 3.2</td>
     <td style="text-align:center;">56.7 &plusmn; 4.1</td>
-    <td style="text-align:center;">78.4 &plusmn; 3.3</td>
-    <td style="text-align:center;">62.0 &plusmn; 5.4</td>
+    <td style="text-align:center;"><b>78.4</b> &plusmn; 3.3</td>
+    <td style="text-align:center;"><b>62.0</b> &plusmn; 5.4</td>
   </tr>
   <tr>
     <td style="text-align:left;"><b>mAP@0.50</b></td>
     <td style="text-align:center;">86.4 &plusmn; 2.7</td>
     <td style="text-align:center;">77.5 &plusmn; 4.9</td>
-    <td style="text-align:center;">87.0 &plusmn; 2.3</td>
-    <td style="text-align:center;">79.5 &plusmn; 4.2</td>
+    <td style="text-align:center;"><b>87.0</b> &plusmn; 2.3</td>
+    <td style="text-align:center;"><b>79.5</b> &plusmn; 4.2</td>
   </tr>
 
   <!-- Bold separator row -->
@@ -74,22 +74,22 @@ Download the following PyTorch model checkpoints to your local download director
     <td style="text-align:left;"><b>mAR@0.50:0.95</b></td>
     <td style="text-align:center;">65.4 &plusmn; 3.0</td>
     <td style="text-align:center;">61.9 &plusmn; 4.4</td>
-    <td style="text-align:center;">70.4 &plusmn; 2.2</td>
-    <td style="text-align:center;">67.9 &plusmn; 3.7</td>
+    <td style="text-align:center;"><b>70.4</b> &plusmn; 2.2</td>
+    <td style="text-align:center;"><b>67.9</b> &plusmn; 3.7</td>
   </tr>
   <tr>
     <td style="text-align:left;"><b>mAR@0.75</b></td>
     <td style="text-align:center;">76.5 &plusmn; 3.2</td>
     <td style="text-align:center;">65.6 &plusmn; 4.4</td>
-    <td style="text-align:center;">82.6 &plusmn; 2.5</td>
-    <td style="text-align:center;">71.8 &plusmn; 4.1</td>
+    <td style="text-align:center;"><b>82.6</b> &plusmn; 2.5</td>
+    <td style="text-align:center;"><b>71.8</b> &plusmn; 4.1</td>
   </tr>
   <tr>
     <td style="text-align:left;"><b>mAR@0.50</b></td>
     <td style="text-align:center;">88.0 &plusmn; 2.6</td>
     <td style="text-align:center;">80.6 &plusmn; 4.5</td>
-    <td style="text-align:center;">88.8 &plusmn; 2.3</td>
-    <td style="text-align:center;">83.6 &plusmn; 3.3</td>
+    <td style="text-align:center;"><b>88.8</b> &plusmn; 2.3</td>
+    <td style="text-align:center;"><b>83.6</b> &plusmn; 3.3</td>
   </tr>
 </table>
 
@@ -140,36 +140,36 @@ We provide only simulated example cases as we are not allowed to share real clin
     <td style="text-align:center;">68.4 &plusmn; 2.6</td>
     <td style="text-align:center;">76.4 &plusmn; 11.9</td>
     <td style="text-align:center;">71.9 &plusmn; 6.9</td>
-    <td style="text-align:center;">85.2 &plusmn; 2.3</td>
-    <td style="text-align:center;">79.8 &plusmn; 10.9</td>
-    <td style="text-align:center;">82.1 &plusmn; 7.1</td>
+    <td style="text-align:center;"><b>85.2</b> &plusmn; 2.3</td>
+    <td style="text-align:center;"><b>79.8</b> &plusmn; 10.9</td>
+    <td style="text-align:center;"><b>82.1</b> &plusmn; 7.1</td>
   </tr>
   <tr>
     <td style="text-align:left;"><b>Tulips</b></td>
     <td style="text-align:center;">84.2 &plusmn; 3.4</td>
     <td style="text-align:center;">94.8 &plusmn; 4.0</td>
     <td style="text-align:center;">89.2 &plusmn; 3.7</td>
-    <td style="text-align:center;">92.6 &plusmn; 6.4</td>
-    <td style="text-align:center;">92.0 &plusmn; 5.7</td>
-    <td style="text-align:center;">92.2 &plusmn; 5.2</td>
+    <td style="text-align:center;"><b>92.6</b> &plusmn; 6.4</td>
+    <td style="text-align:center;"><b>92.0</b> &plusmn; 5.7</td>
+    <td style="text-align:center;"><b>92.2</b> &plusmn; 5.2</td>
   </tr>
   <tr>
     <td style="text-align:left;"><b>Towers</b></td>
     <td style="text-align:center;">85.9 &plusmn; 3.7</td>
     <td style="text-align:center;">85.7 &plusmn; 4.3</td>
     <td style="text-align:center;">85.8 &plusmn; 4.0</td>
-    <td style="text-align:center;">92.4 &plusmn; 0.4</td>
-    <td style="text-align:center;">89.3 &plusmn; 4.2</td>
-    <td style="text-align:center;">90.8 &plusmn; 2.2</td>
+    <td style="text-align:center;"><b>92.4</b> &plusmn; 0.4</td>
+    <td style="text-align:center;"><b>89.3</b> &plusmn; 4.2</td>
+    <td style="text-align:center;"><b>90.8</b> &plusmn; 2.2</td>
   </tr>
   <tr>
     <td style="text-align:left;"><b>K-Wires</b></td>
     <td style="text-align:center;">70.1 &plusmn; 9.9</td>
     <td style="text-align:center;">65.6 &plusmn; 19.7</td>
     <td style="text-align:center;">65.5 &plusmn; 10.6</td>
-    <td style="text-align:center;">77.5 &plusmn; 14.3</td>
-    <td style="text-align:center;">63.0 &plusmn; 9.0</td>
-    <td style="text-align:center;">68.8 &plusmn; 8.5</td>
+    <td style="text-align:center;"><b>77.5</b> &plusmn; 14.3</td>
+    <td style="text-align:center;"><b>63.0</b> &plusmn; 9.0</td>
+    <td style="text-align:center;"><b>68.8</b> &plusmn; 8.5</td>
   </tr>
 
   <!-- Bold separator row -->
@@ -182,9 +182,9 @@ We provide only simulated example cases as we are not allowed to share real clin
     <td style="text-align:center;">74.9 &plusmn; 2.6</td>
     <td style="text-align:center;">78.1 &plusmn; 10.2</td>
     <td style="text-align:center;">76.2 &plusmn; 5.7</td>
-    <td style="text-align:center;">85.9 &plusmn; 4.5</td>
-    <td style="text-align:center;">79.6 &plusmn; 7.7</td>
-    <td style="text-align:center;">82.6 &plusmn; 6.0</td>
+    <td style="text-align:center;"><b>85.9</b> &plusmn; 4.5</td>
+    <td style="text-align:center;"><b>79.6</b> &plusmn; 7.7</td>
+    <td style="text-align:center;"><b>82.6</b> &plusmn; 6.0</td>
   </tr>
 
   <!-- Bold separator row -->
@@ -197,9 +197,9 @@ We provide only simulated example cases as we are not allowed to share real clin
     <td style="text-align:center;">77.2 &plusmn; 3.5</td>
     <td style="text-align:center;">80.6 &plusmn; 8.4</td>
     <td style="text-align:center;">78.1 &plusmn; 5.3</td>
-    <td style="text-align:center;">86.9 &plusmn; 5.3</td>
-    <td style="text-align:center;">81.0 &plusmn; 6.3</td>
-    <td style="text-align:center;">83.5 &plusmn; 5.6</td>
+    <td style="text-align:center;"><b>86.9</b> &plusmn; 5.3</td>
+    <td style="text-align:center;"><b>81.0</b> &plusmn; 6.3</td>
+    <td style="text-align:center;"><b>83.5</b> &plusmn; 5.6</td>
   </tr>
 </table>
 
