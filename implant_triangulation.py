@@ -17,7 +17,7 @@ from triangulation.ray_intersection_triangulation import ray_intersection_triang
 from triangulation.plane_intersection_triangulation import plane_intersection_triangulation
 
 
-# maximum ray intersection distance in 3D [mm]
+# maximum 3D ray intersection distance in [mm]
 # (i.e., triangulation ray consistency threshold)
 mu_3d = 5.0
 

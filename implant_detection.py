@@ -13,7 +13,7 @@ from detectron2.utils.analysis import parameter_count
 
 from utils.preprocessing import preprocessing
 
-# from detectron2.utils.visualizer import Visualizer, ColorMode     # original import / code
+# from detectron2.utils.visualizer import Visualizer, ColorMode     # original code import
 from utils.custom_visualizer import Visualizer, ColorMode           # use custom threshold for keypoint visualization
 
 
