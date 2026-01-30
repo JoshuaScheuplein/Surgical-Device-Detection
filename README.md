@@ -2,7 +2,9 @@
 
 This repository implements methods for **geometry-consistent 3D implant pose estimation from 2D object detections in intraoperative X-ray imaging**. It includes pretrained checkpoints for **Faster R-CNN** and **Mask R-CNN** models used for 2D implant detection in projection images from intraoperative CBCT acquisitions. In addition, the repository provides scripts for **model inference** as well as for estimating the 3D position and orientation of implants by **triangulating the detected 2D keypoints** from two distinct views. All reported quantitative results are based exclusively on **evaluations using real clinical data**. Due to data privacy restrictions, these clinical images cannot be shared publicly. Therefore, this repository includes **simulated example cases** (provided as TIFF files) that demonstrate the full inference and triangulation pipeline.
 
-<img src="figures/Pipeline_Overview.png" alt="Pipeline-Overview" width="100%">
+<p align="center">
+  <img src="figures/Pipeline_Overview.png" alt="Pipeline-Overview" width="100%">
+</p>
 
 ## Requirements
 
@@ -101,11 +103,15 @@ We report both quantitative and qualitative results obtained on real clinical te
   </tr>
 </table>
 
-<img src="figures/Mask_R_CNN_Predictions.png" alt="Model-Predictions" width="100%">
+<p align="center">
+  <img src="figures/Mask_R_CNN_Predictions.png" alt="Model-Predictions" width="100%">
+</p>
 
 ## Triangulation
 
-<img src="figures/Triangulation_Geometry.png" alt="Triangulation-Geometry" width="100%">
+<p align="center">
+  <img src="figures/Triangulation_Geometry.png" alt="Triangulation-Geometry" width="100%">
+</p>
 
 To perform **triangulation**, run the script [implant_triangulation.py](implant_triangulation.py) using the following command:
 
