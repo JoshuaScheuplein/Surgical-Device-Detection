@@ -1,6 +1,6 @@
-# Implant-Detection
+# Surgical-Device-Detection
 
-This repository implements methods for **geometry-consistent 3D implant pose estimation from 2D object detections in intraoperative X-ray imaging**. It includes pretrained checkpoints for **Faster R-CNN** and **Mask R-CNN** models used for 2D implant detection in projection images. In addition, the repository provides scripts for **model inference** as well as for estimating the 3D position and orientation of implants by **triangulating the detected 2D keypoints** from two distinct views. All reported quantitative results are based exclusively on **evaluations using real clinical data**. Due to data privacy restrictions, these clinical images cannot be shared publicly. Therefore, this repository includes [simulated example cases](assets/input_images) (provided as TIFF files) for demonstrating the full inference and triangulation pipeline.
+This repository implements methods for **geometry-consistent 3D pose estimation of surgical devices from 2D object detections in orthopedic and trauma spine procedures**. It includes pretrained checkpoints for **Faster R-CNN** and **Mask R-CNN** models used for 2D device detection in projection images. In addition, the repository provides scripts for **model inference** as well as for estimating the 3D position and orientation of devices by **triangulating the detected 2D keypoints** from two fluoroscopic views. All reported quantitative results are based exclusively on **evaluations using real clinical data**. Due to data privacy restrictions, these clinical images cannot be shared publicly. Therefore, this repository includes [simulated example cases](assets/input_images) (provided as TIFF files) for demonstrating the full inference and triangulation pipeline.
 
 <p align="center">
   <img src="figures/Pipeline_Overview.png" alt="Pipeline-Overview" width="100%">
@@ -12,7 +12,7 @@ To run model inference and perform triangulation, a Python environment must be s
 
 All remaining package dependencies are specified in the provided YAML file: [conda_environment.yaml](conda_environment.yaml)
 
-To use the pretrained implant detection models for inference, please download the **PyTorch model checkpoints** to a local directory on your system (e.g., C:/Users/Username/Downloads):
+To use the pretrained device detection models for inference, please download the **PyTorch model checkpoints** to a local directory on your system (e.g., C:/Users/Username/Downloads):
 
 | Model Architecture | # Parameters | Download                           |
 |:------------------:|:------------:|:----------------------------------:|
@@ -21,10 +21,10 @@ To use the pretrained implant detection models for inference, please download th
 
 ## Model Inference
 
-For performing **model inference**, execute the script [implant_detection.py](implant_detection.py) using the following command:
+For performing **model inference**, execute the script [device_detection.py](implant_detection.py) using the following command:
 
 ```bash
-python implant_detection.py --download_dir="C:/Users/Username/Downloads/" --model_type="Mask-R-CNN"  
+python device_detection.py --download_dir="C:/Users/Username/Downloads/" --model_type="Mask-R-CNN"  
 ```
 
 We report both quantitative and qualitative results obtained on real clinical test scans as follows:
@@ -113,10 +113,10 @@ We report both quantitative and qualitative results obtained on real clinical te
   <img src="figures/Triangulation_Geometry.png" alt="Triangulation-Geometry" width="100%">
 </p>
 
-To perform **triangulation**, run the script [implant_triangulation.py](implant_triangulation.py) using the following command:
+To perform **triangulation**, run the script [device_triangulation.py](implant_triangulation.py) using the following command:
 
 ```bash
-python implant_triangulation.py --model_type="Mask-R-CNN" --detection_type="predictions" --enable_refinement="False"
+python device_triangulation.py --model_type="Mask-R-CNN" --detection_type="predictions" --enable_refinement="False"
 ```
 
 Quantitative results obtained on clinical test scans are summarized in the table below:
@@ -217,7 +217,7 @@ Quantitative results obtained on clinical test scans are summarized in the table
   </tr>
 </table>
 
-To **visualize the output of the triangulation methods**, we generate [preview images](assets/triangulation_results/) that summarize the triangulated implant keypoints. The first row shows the initial 2D implant detections for both projection views. The second row displays the corresponding 2D implant locations obtained by **forward-projecting the triangulated 3D implant positions** back onto the detector plane. A close alignment between the forward-projected 3D keypoints and the corresponding image features in the projection images indicates accurate and geometrically consistent triangulation.
+To **visualize the output of the triangulation methods**, we generate [preview images](assets/triangulation_results/) that summarize the triangulated device keypoints. The first row shows the initial 2D device detections for both projection views. The second row displays the corresponding 2D device locations obtained by **forward-projecting the triangulated 3D device positions** back onto the detector plane. A close alignment between the forward-projected 3D keypoints and the corresponding image features in the projection images indicates accurate and geometrically consistent triangulation.
 
 <p align="center">
   <img src="assets/triangulation_results/Mask-R-CNN/S260_Spine03/Triangulation_S260_Spine03_v1_120_v2_300_pred.png" alt="Triangulation-Preview" width="70%">
