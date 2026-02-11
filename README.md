@@ -21,7 +21,7 @@ To use the pretrained device detection models for inference, please download the
 
 ## Model Inference
 
-For performing **model inference**, execute the script [device_detection.py](implant_detection.py) using the following command:
+For performing **model inference**, execute the script [device_detection.py](device_detection.py) using the following command:
 
 ```bash
 python device_detection.py --download_dir="C:/Users/Username/Downloads/" --model_type="Mask-R-CNN"  
@@ -113,7 +113,7 @@ We report both quantitative and qualitative results obtained on real clinical te
   <img src="figures/Triangulation_Geometry.png" alt="Triangulation-Geometry" width="100%">
 </p>
 
-To perform **triangulation**, run the script [device_triangulation.py](implant_triangulation.py) using the following command:
+To perform **triangulation**, run the script [device_triangulation.py](device_triangulation.py) using the following command:
 
 ```bash
 python device_triangulation.py --model_type="Mask-R-CNN" --detection_type="predictions" --enable_refinement="False"
