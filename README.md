@@ -3,7 +3,7 @@
 This repository implements methods for **geometry-consistent 3D pose estimation of surgical devices from 2D object detections in orthopedic and trauma spine procedures**. It includes pretrained checkpoints for **Faster R-CNN** and **Mask R-CNN** models used for 2D device detection in projection images. In addition, the repository provides scripts for **model inference** as well as for estimating the 3D position and orientation of devices by **triangulating the detected 2D keypoints** from two fluoroscopic views. All reported quantitative results are based exclusively on **evaluations using real clinical data**. Due to data privacy restrictions, these clinical images cannot be shared publicly. Therefore, this repository includes [simulated example cases](assets/input_images) (provided as TIFF files) for demonstrating the full inference and triangulation pipeline.
 
 <p align="center">
-  <img src="figures/ne_Overview.png" alt="Pipeline-Overview" width="100%">
+  <img src="figures/Figure_1_Methods_Overview.png" alt="Pipeline-Overview" width="100%">
 </p>
 
 ## Requirements
@@ -104,13 +104,13 @@ We report both quantitative and qualitative results obtained on real clinical te
 </table>
 
 <p align="center">
-  <img src="figures/Mask_R_CNN_Prections.png" alt="Model-Predictions" width="100%">
+  <img src="figures/Figure_3_Mask_R_CNN_Predictions.png" alt="Model-Predictions" width="100%">
 </p>
 
 ## Triangulation
 
 <p align="center">
-  <img src="figures/Triaulation_Geometry.png" alt="Triangulation-Geometry" width="100%">
+  <img src="figures/Figure_2_Triangulation_Geometry.png" alt="Triangulation-Geometry" width="100%">
 </p>
 
 To perform **triangulation**, run the script [device_triangulation.py](device_triangulation.py) using the following command:
