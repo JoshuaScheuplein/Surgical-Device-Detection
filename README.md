@@ -161,10 +161,10 @@ Quantitative results obtained on clinical test scans are summarized in the table
   <tr>
     <td style="text-align:left;"><b>Tulips</b></td>
     <td style="text-align:center;">84.2 &plusmn; 3.4</td>
-    <td style="text-align:center;">94.8 &plusmn; 4.0</td>
+    <td style="text-align:center;"><b>94.8</b> &plusmn; 4.0</td>
     <td style="text-align:center;">89.2 &plusmn; 3.7</td>
     <td style="text-align:center;"><b>92.6</b> &plusmn; 6.4</td>
-    <td style="text-align:center;"><b>92.0</b> &plusmn; 5.7</td>
+    <td style="text-align:center;">92.0 &plusmn; 5.7</td>
     <td style="text-align:center;"><b>92.2</b> &plusmn; 5.2</td>
   </tr>
   <tr>
@@ -179,10 +179,10 @@ Quantitative results obtained on clinical test scans are summarized in the table
   <tr>
     <td style="text-align:left;"><b>K-Wires</b></td>
     <td style="text-align:center;">70.1 &plusmn; 9.9</td>
-    <td style="text-align:center;">65.6 &plusmn; 19.7</td>
+    <td style="text-align:center;"><b>65.6</b> &plusmn; 19.7</td>
     <td style="text-align:center;">65.5 &plusmn; 10.6</td>
     <td style="text-align:center;"><b>77.5</b> &plusmn; 14.3</td>
-    <td style="text-align:center;"><b>63.0</b> &plusmn; 9.0</td>
+    <td style="text-align:center;">63.0 &plusmn; 9.0</td>
     <td style="text-align:center;"><b>68.8</b> &plusmn; 8.5</td>
   </tr>
 
