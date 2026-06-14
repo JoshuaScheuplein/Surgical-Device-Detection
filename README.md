@@ -225,3 +225,6 @@ To **visualize the output of the triangulation methods**, we generate [preview i
 
 ## License
 This repository is released under the Apache License 2.0. See [LICENSE](LICENSE) for additional details.
+
+## Citation
+If you use this software in academic work, please cite the associated publication.
